@@ -1,2 +1,0 @@
-#ECS
-Elastic Container Service
