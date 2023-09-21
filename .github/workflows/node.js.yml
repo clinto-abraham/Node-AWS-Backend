@@ -28,5 +28,5 @@ jobs:
     - run: |
         touch .env
         echo "${{ secrets.PROD_NODE_SECRETS }}" > .env
-    - run: sudo pm2 restart node
+    - run: sudo pm2 startup
     # - run: npm test
