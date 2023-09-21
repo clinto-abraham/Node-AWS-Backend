@@ -27,6 +27,6 @@ jobs:
     - run: npm run build --if-present
     - run: |
         touch .env
-        echo "${{ secrets.PROD_ENV }}" > .env
-    - run: sudo pm2 restart BackendAPI
+        echo "${{ secrets.PROD_NODE_SECRETS }}" > .env
+    - run: sudo pm2 restart 
     # - run: npm test
